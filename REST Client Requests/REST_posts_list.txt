@@ -1,0 +1,1 @@
+{"requestUrl":"http://localhost/~diggindata/yii-blog-rest/index.php/api/posts","requestMethod":"GET","requestBody":"","headers":["X_ASCCPE_PASSWORD","demo","X_ASCCPE_USERNAME","demo"]}
