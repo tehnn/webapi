@@ -5,7 +5,7 @@ class Api2Controller extends Controller {
     private $format = 'json';
 
     public function actionIndex() {
-        $this->render('Site/Index');
+        
     }
 
     public function actionList() {
