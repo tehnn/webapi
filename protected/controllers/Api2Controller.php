@@ -30,7 +30,7 @@ class Api2Controller extends Controller {
     }
 
     public function actionView() {
-        $this->_checkAuth();
+        //$this->_checkAuth();
         // Check if id was submitted via GET
         if (!isset($_GET['id']))
             $this->_sendResponse(500, 'Error: Parameter <b>id</b> is missing');
@@ -52,7 +52,7 @@ class Api2Controller extends Controller {
     }
 
     public function actionCreate() {
-        $this->_checkAuth();
+        //$this->_checkAuth();
         
         parse_str(file_get_contents('php://input'), $post_vars);
 
@@ -97,7 +97,7 @@ class Api2Controller extends Controller {
 
 
     public function actionUpdate() {
-        $this->_checkAuth();
+       // $this->_checkAuth();
 
         // Get PUT parameters
         parse_str(file_get_contents('php://input'), $put_vars);
@@ -145,7 +145,7 @@ class Api2Controller extends Controller {
     }
 
     public function actionDelete() {
-        $this->_checkAuth();
+        //$this->_checkAuth();
 
         switch ($_GET['model']) {
             // Load the respective model

@@ -1569,3 +1569,154 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/webapi/index.php/api2/
 ---
+2014/12/31 06:01:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/8
+---
+2014/12/31 06:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('post')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/Curl/post
+---
+2014/12/31 06:32:23 [error] [php] Undefined offset: 0 (E:\xampp\htdocs\webapi\protected\controllers\CurlController.php:19)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): CurlController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): CurlController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CurlController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/CURL/list
+2014/12/31 06:32:26 [error] [php] Undefined offset: 0 (E:\xampp\htdocs\webapi\protected\controllers\CurlController.php:19)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): CurlController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): CurlController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CurlController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/CURL/list
+2014/12/31 06:36:33 [error] [php] Undefined variable: fields_string (E:\xampp\htdocs\webapi\protected\controllers\CurlController.php:43)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): CurlController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): CurlController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CurlController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/Curl/post1
+2014/12/31 06:40:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post1')
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post1')
+#5 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/webapi/index.php/Curl/post1
+---
+2014/12/31 06:40:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post1')
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post1')
+#5 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/webapi/index.php/Curl/post1
+---
+2014/12/31 06:41:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post1')
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post1')
+#5 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/webapi/index.php/Curl/post1
+---
+2014/12/31 06:41:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post1')
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post1')
+#5 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/webapi/index.php/Curl/post1
+---
+2014/12/31 06:41:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post1')
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post1')
+#5 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/webapi/index.php/Curl/post1
+---
+2014/12/31 06:41:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post1')
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post1')
+#5 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/webapi/index.php/Curl/post1
+---
+2014/12/31 06:41:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in E:\xampp\htdocs\framework\web\CController.php:336
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post1')
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post1')
+#5 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/webapi/index.php/Curl/post1
+---
+2014/12/31 06:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('post')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/Curl/post
+---
+2014/12/31 06:42:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('post')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('post')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('Curl/post')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/Curl/post
+---
