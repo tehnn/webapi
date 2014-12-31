@@ -1908,3 +1908,438 @@ Stack trace:
 #6 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
 #7 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
 REQUEST_URI=/webapi/index.php/curl/list?id=15
+2014/12/31 07:14:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "curl/list".' in E:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('curl/list')
+#1 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapi/index.php/curl/list
+---
+2014/12/31 07:14:25 [error] [exception.CException] exception 'CException' with message 'ClientController cannot find the requested view "rpt".' in E:\xampp\htdocs\framework\web\CController.php:878
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('rpt', Array, true)
+#1 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(39): CController->render('rpt', Array)
+#2 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#3 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('list')
+#7 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('client/list')
+#8 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/webapi/index.php/client/list
+---
+2014/12/31 07:18:40 [error] [php] Undefined offset: 0 (E:\xampp\htdocs\webapi\protected\controllers\ClientController.php:31)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:18:41 [error] [php] Undefined offset: 0 (E:\xampp\htdocs\webapi\protected\controllers\ClientController.php:31)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:18:44 [error] [php] Undefined offset: 0 (E:\xampp\htdocs\webapi\protected\controllers\ClientController.php:31)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:32:08 [error] [php] Undefined offset: 0 (E:\xampp\htdocs\webapi\protected\controllers\ClientController.php:49)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#3 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#4 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#5 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/view?id=50
+2014/12/31 07:34:36 [error] [exception.CException] exception 'CException' with message 'Property "CGridView.column" is not defined.' in E:\xampp\htdocs\framework\base\CComponent.php:173
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CWidgetFactory.php(161): CComponent->__set('column', Array)
+#1 E:\xampp\htdocs\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ClientController), 'zii.widgets.gri...', Array)
+#2 E:\xampp\htdocs\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(20): CBaseController->widget('zii.widgets.gri...', Array)
+#4 E:\xampp\htdocs\framework\web\CBaseController.php(126): require('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\framework\web\CBaseController.php(95): CBaseController->renderInternal('E:\\xampp\\htdocs...', Array, true)
+#6 E:\xampp\htdocs\framework\web\CController.php(869): CBaseController->renderFile('E:\\xampp\\htdocs...', Array, true)
+#7 E:\xampp\htdocs\framework\web\CController.php(782): CController->renderPartial('rpt', Array, true)
+#8 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): CController->render('rpt', Array)
+#9 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#10 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 E:\xampp\htdocs\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 E:\xampp\htdocs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('list')
+#14 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('client/list')
+#15 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/webapi/index.php/client/list
+HTTP_REFERER=http://localhost/webapi/index.php/client/list
+---
+2014/12/31 07:36:05 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(23): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:36:33 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(23): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:37:16 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(23): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:37:34 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(23): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:39:22 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CLinkColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CLinkColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(24): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:42:14 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(24): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:42:21 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(24): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:44:38 [error] [php] Trying to get property of non-object (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(28): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:45:48 [error] [php] Undefined variable: rawData (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\rpt.php(29): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list
+2014/12/31 07:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "CURL/list".' in E:\xampp\htdocs\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('CURL/list')
+#1 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapi/index.php/CURL/list
+---
+2014/12/31 08:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "put".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('put')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('put')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('client/put')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/client/put
+HTTP_REFERER=http://localhost/webapi/index.php/client/50
+---
+2014/12/31 08:04:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/50
+---
+2014/12/31 08:04:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/57
+---
+2014/12/31 08:07:19 [error] [php] Undefined variable: id (E:\xampp\htdocs\webapi\protected\controllers\ClientController.php:90)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/put
+2014/12/31 08:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/56
+---
+2014/12/31 08:07:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/50
+---
+2014/12/31 08:07:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/55
+---
+2014/12/31 08:07:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/54
+---
+2014/12/31 08:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/54
+---
+2014/12/31 08:12:20 [error] [php] Undefined variable: respond (E:\xampp\htdocs\webapi\protected\controllers\ClientController.php:109)
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#1 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#3 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/put
+2014/12/31 08:19:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "patients".' in E:\xampp\htdocs\framework\web\CController.php:483
+Stack trace:
+#0 E:\xampp\htdocs\framework\web\CController.php(270): CController->missingAction('patients')
+#1 E:\xampp\htdocs\framework\web\CWebApplication.php(282): CController->run('patients')
+#2 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController('api2/patients/q...')
+#3 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 E:\xampp\htdocs\webapi\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapi/index.php/api2/patients/qq
+---
