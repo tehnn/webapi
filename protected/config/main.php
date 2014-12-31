@@ -7,6 +7,7 @@
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'Yii Blog Demo',
+    'defaultController' => 'client/list',
     // preloading 'log' component
     'preload' => array('log'),
     // autoloading model and component classes
@@ -31,7 +32,7 @@ return array(
             'allowAutoLogin' => true,
         ),
         'db' => array(
-            'connectionString' => 'sqlite:protected/data/blog.db',
+            'connectionString' => 'sqlite:protected/data/service.db',
             'tablePrefix' => 'tbl_',
         ),
         // uncomment the following to use a MySQL database
