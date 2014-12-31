@@ -9,7 +9,7 @@ class Api2Controller extends Controller {
     }
 
     public function actionList() {
-        $this->_checkAuth();
+        //$this->_checkAuth();
         switch ($_GET['model']) {
             case 'patients': // {{{ 
                 $models = Patient::model()->findAll();
