@@ -8,7 +8,7 @@ class CURLController extends Controller {
 
     public function actionList() {
 
-        $output = Yii::app()->curl->run('http://localhost/webapi/index.php/api/posts/');
+        $output = Yii::app()->curl->run('http://localhost/webapi/index.php/api2/patients/');
         
         
 
