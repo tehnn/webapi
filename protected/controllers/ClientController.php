@@ -7,6 +7,7 @@ class ClientController extends Controller {
     }
 
     public function actionList() {
+        
         $url = "http://localhost/webapi/index.php/api2/patients/";
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
