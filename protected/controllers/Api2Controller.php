@@ -53,6 +53,8 @@ class Api2Controller extends Controller {
 
     public function actionCreate() {
         $this->_checkAuth();
+        
+        parse_str(file_get_contents('php://input'), $post_vars);
 
         switch ($_GET['model']) {
             // Get an instance of the respective model
@@ -64,7 +66,7 @@ class Api2Controller extends Controller {
                 Yii::app()->end();
         }
 
-        foreach ($_POST as $var => $value) {
+        foreach ($post_vars as $var => $value) {
 
             if ($model->hasAttribute($var))
                 $model->$var = $value;
