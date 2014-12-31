@@ -9,7 +9,7 @@ class Api2Controller extends Controller {
     }
 
     public function actionList() {
-        //$this->_checkAuth();
+        $this->_checkAuth();
         switch ($_GET['model']) {
             case 'patients': // {{{ 
                 $models = Patient::model()->findAll();
@@ -30,14 +30,14 @@ class Api2Controller extends Controller {
     }
 
     public function actionView() {
-        //$this->_checkAuth();
+        $this->_checkAuth();
         // Check if id was submitted via GET
         if (!isset($_GET['id']))
             $this->_sendResponse(500, 'Error: Parameter <b>id</b> is missing');
 
         switch ($_GET['model']) {
             // Find respective model    
-             case 'patients': // {{{ 
+            case 'patients': // {{{ 
                 $model = Patient::model()->findByPk($_GET['id']);
                 break; // }}} 
             default: // {{{ 
@@ -52,8 +52,8 @@ class Api2Controller extends Controller {
     }
 
     public function actionCreate() {
-        //$this->_checkAuth();
-        
+        $this->_checkAuth();
+
         parse_str(file_get_contents('php://input'), $post_vars);
 
         switch ($_GET['model']) {
@@ -95,9 +95,8 @@ class Api2Controller extends Controller {
         var_dump($_REQUEST);
     }
 
-
     public function actionUpdate() {
-       // $this->_checkAuth();
+        $this->_checkAuth();
 
         // Get PUT parameters
         parse_str(file_get_contents('php://input'), $put_vars);
@@ -145,11 +144,11 @@ class Api2Controller extends Controller {
     }
 
     public function actionDelete() {
-        //$this->_checkAuth();
+        $this->_checkAuth();
 
         switch ($_GET['model']) {
             // Load the respective model
-             case 'patients': // {{{ 
+            case 'patients': // {{{ 
                 $model = Patient::model()->findByPk($_GET['id']);
                 break; // }}} 
             default: // {{{ 
@@ -230,7 +229,7 @@ class Api2Controller extends Controller {
     }
 
     private function _getStatusCodeMessage($status) {
-        
+
         $codes = Array(
             100 => 'Continue',
             101 => 'Switching Protocols',
@@ -279,8 +278,8 @@ class Api2Controller extends Controller {
     }
 
     private function _checkAuth() {
-        
-         $h = getallheaders();
+
+        $h = getallheaders();
 
 
         if (empty($h['USERNAME']) or empty($h['PASSWORD'])) {
@@ -298,7 +297,6 @@ class Api2Controller extends Controller {
             // Error: Unauthorized
             $this->_sendResponse(401, 'Error: User Password is invalid');
         }
-        
     }
 
     private function _getObjectEncoded($model, $array) {
