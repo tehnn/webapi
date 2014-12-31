@@ -17,14 +17,24 @@ $this->widget('zii.widgets.grid.CGridView', array(
     'dataProvider' => $dataProvider,
     'columns' => array(
         array(
-            'name'=>'id',
+            'name' => 'id',
             'value' => 'CHtml::link($data["id"], Yii::app()->createUrl("client/view",array("id"=>$data["id"])))',
-            'type'=>'raw'
-        
+            'type' => 'raw'
         ),
         'name',
         'lname',
-        'dx'
+        'dx',
+        array(
+            'class' => 'CButtonColumn',
+            'template' => '{delete}',
+            'buttons' => array(
+                'delete' => array(
+                    'label' => '',
+                    'url' => 'Yii::app()->createUrl("client/delete", array("id"=>$data["id"]))',
+                    //'imageUrl' => FALSE,
+                    'options' => array('title' => 'ลบ'),
+                ))
+        )
     )
 ));
 

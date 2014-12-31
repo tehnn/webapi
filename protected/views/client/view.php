@@ -6,5 +6,5 @@
         <?= $key ?> : <input type="text" name="<?= $key ?>" value="<?= $value ?>" > <br>
 
     <?php endforeach; ?>
-        <input type="submit">
+        <input type="submit" value="Save">
 </form>

@@ -2343,3 +2343,29 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/webapi/index.php/api2/patients/qq
 ---
+2014/12/31 08:37:10 [error] [php] Use of undefined constant ลบ - assumed 'ลบ' (E:\xampp\htdocs\framework\base\CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 E:\xampp\htdocs\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#1 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#2 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#3 E:\xampp\htdocs\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#4 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#7 E:\xampp\htdocs\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#8 E:\xampp\htdocs\framework\web\CBaseController.php(173): CGridView->run()
+#9 E:\xampp\htdocs\webapi\protected\views\client\list.php(33): ClientController->widget()
+#10 E:\xampp\htdocs\framework\web\CBaseController.php(126): require()
+#11 E:\xampp\htdocs\framework\web\CBaseController.php(95): ClientController->renderInternal()
+#12 E:\xampp\htdocs\framework\web\CController.php(869): ClientController->renderFile()
+#13 E:\xampp\htdocs\framework\web\CController.php(782): ClientController->renderPartial()
+#14 E:\xampp\htdocs\webapi\protected\controllers\ClientController.php(34): ClientController->render()
+#15 E:\xampp\htdocs\framework\web\actions\CInlineAction.php(49): ClientController->actionList()
+#16 E:\xampp\htdocs\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 E:\xampp\htdocs\framework\web\CController.php(286): ClientController->runAction()
+#18 E:\xampp\htdocs\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#19 E:\xampp\htdocs\framework\web\CWebApplication.php(282): ClientController->run()
+#20 E:\xampp\htdocs\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 E:\xampp\htdocs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 E:\xampp\htdocs\webapi\index.php(14): CWebApplication->run()
+REQUEST_URI=/webapi/index.php/client/list

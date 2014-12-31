@@ -26,9 +26,6 @@ return array(
     ),
     // application components
     'components' => array(
-        'curl' => array(
-            'class' => 'ext.Curl',
-        ),
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,
@@ -55,7 +52,6 @@ return array(
         'urlManager' => array(
             'urlFormat' => 'path',
             'rules' => array(
-                
                 // REST patterns
                 array('api/list', 'pattern' => 'api/<model:\w+>', 'verb' => 'GET'),
                 array('api/view', 'pattern' => 'api/<model:\w+>/<id:\d+>', 'verb' => 'GET'),
@@ -68,7 +64,6 @@ return array(
                 array('api2/delete', 'pattern' => 'api2/<model:\w+>/<id:\d+>', 'verb' => 'DELETE'),
                 array('api2/create', 'pattern' => 'api2/<model:\w+>', 'verb' => 'POST'),
                 // Other controllers
-                
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',

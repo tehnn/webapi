@@ -105,4 +105,30 @@ class ClientController extends Controller {
         }
     }
 
+    public function actionDelete($id = NULL) {
+
+
+        $url = "http://localhost/webapi/index.php/api2/patients/$id";
+
+        $ch = curl_init($url);
+
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $response = curl_exec($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+        
+        //echo $response;
+        //echo "<br>";
+        //echo $httpCode;
+        
+        if ($response) {
+            //$this->redirect(array('list'));
+            //grid view update by ajax
+        }
+
+        
+    }
+
 }
