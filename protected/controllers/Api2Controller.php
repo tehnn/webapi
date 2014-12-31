@@ -280,6 +280,25 @@ class Api2Controller extends Controller {
 
     private function _checkAuth() {
         
+         $h = getallheaders();
+
+
+        if (empty($h['USERNAME']) or empty($h['PASSWORD'])) {
+            // Error: Unauthorized
+            $this->_sendResponse(401);
+        }
+        $username = $h['USERNAME'];
+        $password = $h['PASSWORD'];
+        // Find the user
+        $user = User::model()->find('LOWER(username)=?', array(strtolower($username)));
+        if ($user === null) {
+            // Error: Unauthorized
+            $this->_sendResponse(401, 'Error: User Name is invalid');
+        } else if (!$user->validatePassword($password)) {
+            // Error: Unauthorized
+            $this->_sendResponse(401, 'Error: User Password is invalid');
+        }
+        
     }
 
     private function _getObjectEncoded($model, $array) {
